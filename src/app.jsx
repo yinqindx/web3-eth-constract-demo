@@ -15,7 +15,7 @@ const App = () => {
           {account}
         </a>
       </p>
-      <p>{earned}</p>
+      <p>赚取的YAM：{earned}</p>
     </div>
   )
 }
