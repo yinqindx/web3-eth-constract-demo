@@ -1,9 +1,7 @@
 import { useEffect, useCallback, useState } from 'react'
 import { getEarned } from '../yam-sdk/incentive'
 
-const account = '0xaF1298e387D6AFc9BB2120343AB2358C7a3f7282'
-
-const userIncentive = () => {
+const userIncentive = (account) => {
   const [earned, setEarned] = useState(0)
   const fetchEarned = useCallback(async () => {
     const data = await getEarned(account)

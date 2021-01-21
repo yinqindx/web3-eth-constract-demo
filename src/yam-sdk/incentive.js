@@ -1,6 +1,6 @@
 import web3 from './web3'
 import INCENTIVE_JSON from './contracts/incentive.json'
-import { INCENTIVE as INCENTIVE_ADDRESS } from './address'
+import { INCENTIVE as INCENTIVE_ADDRESS } from './constant'
 
 const INCENTIVE_CONTRACT = new web3.eth.Contract(INCENTIVE_JSON.abi)
 
